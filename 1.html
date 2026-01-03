@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李國祿的個人連結 | My Social Links</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            color: #f8fafc;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .link-icon {
+            font-size: 1.5rem;
+        }
+        /* Instagram 漸層色 */
+        .hover-ig:hover {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+        }
+        /* Facebook 藍 */
+        .hover-fb:hover {
+            background: #1877F2;
+            color: white;
+        }
+        /* YouTube 紅 */
+        .hover-yt:hover {
+            background: #FF0000;
+            color: white;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center py-12 px-4">
+
+    <!-- 個人資訊區塊 -->
+    <div class="text-center mb-8">
+        <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-cyan-500/50 mx-auto mb-4 shadow-[0_0_20px_rgba(6,182,212,0.5)]">
+            <!-- 使用您提供的頭像網址 -->
+            <img src="https://cdn.bella.tw/files-20251002/%E9%87%91%E5%9F%8E%E6%AD%A61.jpg" 
+                 alt="李國祿的頭像" 
+                 class="w-full h-full object-cover object-top"
+                 onerror="this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=LiKuoLu'">
+        </div>
+        <h1 class="text-2xl font-bold mb-2 text-white">李國祿</h1>
+        <p class="text-slate-400 max-w-xs mx-auto text-sm">歡迎來到我的社交連結頁面。在這裡你可以找到我最新的創作與生活點滴。</p>
+    </div>
+
+    <!-- 連結列表 -->
+    <div class="w-full max-w-md space-y-4">
+        
+        <!-- Instagram -->
+        <a href="https://instagram.com" target="_blank" class="glass-card hover-ig flex items-center p-4 rounded-2xl w-full group">
+            <div class="w-12 h-12 flex items-center justify-center bg-slate-800 rounded-xl group-hover:bg-white/10">
+                <i class="fab fa-instagram link-icon"></i>
+            </div>
+            <div class="ml-4 flex-grow">
+                <h2 class="font-semibold text-white">Instagram</h2>
+                <p class="text-xs text-slate-400 group-hover:text-white/80">追蹤我的日常生活紀錄</p>
+            </div>
+            <i class="fas fa-chevron-right text-slate-500 group-hover:text-white"></i>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://facebook.com" target="_blank" class="glass-card hover-fb flex items-center p-4 rounded-2xl w-full group">
+            <div class="w-12 h-12 flex items-center justify-center bg-slate-800 rounded-xl group-hover:bg-white/10">
+                <i class="fab fa-facebook-f link-icon"></i>
+            </div>
+            <div class="ml-4 flex-grow">
+                <h2 class="font-semibold text-white">Facebook</h2>
+                <p class="text-xs text-slate-400 group-hover:text-white/80">加入我的社群粉絲專頁</p>
+            </div>
+            <i class="fas fa-chevron-right text-slate-500 group-hover:text-white"></i>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://youtube.com" target="_blank" class="glass-card hover-yt flex items-center p-4 rounded-2xl w-full group">
+            <div class="w-12 h-12 flex items-center justify-center bg-slate-800 rounded-xl group-hover:bg-white/10">
+                <i class="fab fa-youtube link-icon"></i>
+            </div>
+            <div class="ml-4 flex-grow">
+                <h2 class="font-semibold text-white">YouTube</h2>
+                <p class="text-xs text-slate-400 group-hover:text-white/80">觀看我最新的影片內容</p>
+            </div>
+            <i class="fas fa-chevron-right text-slate-500 group-hover:text-white"></i>
+        </a>
+
+        <!-- 其他連結 (個人網站/部落格) -->
+        <a href="#" class="glass-card hover:bg-white/20 flex items-center p-4 rounded-2xl w-full group">
+            <div class="w-12 h-12 flex items-center justify-center bg-slate-800 rounded-xl group-hover:bg-white/10">
+                <i class="fas fa-globe link-icon"></i>
+            </div>
+            <div class="ml-4 flex-grow">
+                <h2 class="font-semibold text-white">個人網站</h2>
+                <p class="text-xs text-slate-400 group-hover:text-white/80">探索更多關於我的內容</p>
+            </div>
+            <i class="fas fa-chevron-right text-slate-500 group-hover:text-white"></i>
+        </a>
+
+    </div>
+
+    <!-- 底部 Footer -->
+    <footer class="mt-auto pt-12 text-slate-500 text-xs text-center">
+        <p>&copy; 2024 李國祿. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 點擊事件紀錄
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const title = link.querySelector('h2').innerText;
+                console.log('正在導向:', title);
+            });
+        });
+    </script>
+</body>
+</html>
